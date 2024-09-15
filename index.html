@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title> lab 1</title>
+  
 </head>
 <body>
-    
+    <h1>The Square</h1>
+    <input type="number" id="width" placeholder="Width (%)" value="30" min="1" max="100">
+    <input type="number" id="height" placeholder="Height (%)" value="40" min="1" max="100">
+    <input type="color" id="color" value="#3498db">
+    <input type="number" id="borderRadius" placeholder="Border Radius (px)" value="0" min="0">
+    <br><br>
+    <button onclick="updateSquare()">Update</button>
+    <button onclick="resetSquare()">Reset</button>
+
+    <div id="square"></div>
+<script src="./main.js"></script>
 </body>
 </html>
